@@ -1,1 +1,11 @@
 version: "3"
+
+services: 
+    flask_test_1:
+        build: fl_api_1/
+        ports: 8001:8001
+        restart: always
+    flask_test_2:
+        build: fl_api_2/
+        ports: 8002:8002
+        restart: always
